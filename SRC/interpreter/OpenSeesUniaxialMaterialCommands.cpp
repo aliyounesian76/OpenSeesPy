@@ -307,7 +307,7 @@ static int setUpUniaxialMaterials(void) {
   uniaxialMaterialsMap.insert(
       std::make_pair("ElasticPP", &OPS_ElasticPPMaterial));
   uniaxialMaterialsMap.insert(
-      std::make_pair("ElasticPPcpp", &OPS_ElasticPPcppMaterial));
+      std::make_pair("ElasticPPcpp", &OPS_ElasticPPcpp));
   uniaxialMaterialsMap.insert(
       std::make_pair("Parallel", &OPS_ParallelMaterial));
   uniaxialMaterialsMap.insert(
