@@ -85,6 +85,7 @@ UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 void* OPS_ElasticMaterial();
 void* OPS_ElasticPPMaterial();
+void* OPS_ElasticPPcpp();
 void* OPS_ParallelMaterial();
 void* OPS_SeriesMaterial();
 void* OPS_EPPGapMaterial();
@@ -305,6 +306,8 @@ static int setUpUniaxialMaterials(void) {
       std::make_pair("Elastic", &OPS_ElasticMaterial));
   uniaxialMaterialsMap.insert(
       std::make_pair("ElasticPP", &OPS_ElasticPPMaterial));
+  uniaxialMaterialsMap.insert(
+      std::make_pair("ElasticPPcpp", &OPS_ElasticPPcppMaterial));
   uniaxialMaterialsMap.insert(
       std::make_pair("Parallel", &OPS_ParallelMaterial));
   uniaxialMaterialsMap.insert(
